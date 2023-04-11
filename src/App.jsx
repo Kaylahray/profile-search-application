@@ -4,6 +4,7 @@ import "./index.css";
 
 function App() {
   const [query, setQuery] = useState("");
+  const keys = ["id", "title", "firstName", "lastName"];
   return (
     <div className="App">
       <input
@@ -17,7 +18,11 @@ function App() {
           .filter((item) => {
             if (query == " ") {
               return item;
-            } else if (item.id.toLowerCase().includes(query.toLowerCase())) {
+            } else if (
+              keys.some((key) =>
+                item[key].toLowerCase().includes(query.toLowerCase())
+              )
+            ) {
               return item;
             }
           })
