@@ -17,7 +17,8 @@
 }
 .input-text::placeholder {
   padding-left: 10px;
-  color: rgb(255, 64, 0);
+  /* color: rgb(255, 64, 0); */
+  font-variant: small-caps;
 }
 #root {
   width: 100%;
