@@ -40,6 +40,8 @@
   word-wrap: break-word;
   overflow: hidden;
   align-items: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-transform: capitalize;
   column-gap: 20px;
   padding: 20px;
 }
